@@ -1,0 +1,26 @@
+[begin] (Choose)
+	[exec] (urxvt) {/usr/bin/urxvt -depth 32 -bg rgba:0000/0000/0000/dddd -tint grey -fade 25}
+	[exec] (xterm) {xterm}
+	[exec] (firefox-nightly) {firefox-nightly}
+	[exec] (firefox) {firefox}
+	[exec] (epdfview) {epdfview}
+	[exec] (rhythmbox) {rhythmbox}
+	[exec] (gimp) {gimp}
+	[exec] (blender) {blender}
+	[exec] (conky) {conky}
+	[exec] (thunar) {thunar}
+
+	[config] (Configure)
+[submenu] (Styles) {Choose a style}
+	[stylesdir] (/usr/share/fluxbox/styles)
+	[stylesdir] (~/.fluxbox/styles)
+[end]
+	[workspaces]   (Workspace List)
+[submenu] (Tools)
+	[exec] (Windowname) {xprop|grep WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+[end]
+	[exec] (LOCK: desktop) {xlock -mode blank -enablesaver}
+	[reconfig] (REALOD: config)
+	[restart] (RESTART: wm)
+	[exit] (EXIT: wm)
+[end]

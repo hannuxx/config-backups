@@ -1,0 +1,86 @@
+# "BlueGrey"
+# A Fluxbox theme by: Hannu The Hacker
+# 2012
+toolbar:                        Flat Solid
+toolbar.color:                  MidnightBlue
+
+toolbar.clock:                  ParentRelative
+toolbar.label:                  ParentRelative
+toolbar.windowLabel:            ParentRelative
+
+toolbar.button:                 ParentRelative
+toolbar.button.pressed:         Flat Solid
+toolbar.button.pressed.color:   SteelBlue
+toolbar.button*picColor:        White
+
+toolbar.textColor:              White
+toolbar.justify:                center
+
+toolbar*font:			-adobe-timeshax-bold-r-*-*-18-*-*-*-*-*-iso10646-1
+
+window.title.focus:             Flat Solid
+window.title.focus.color:       LightBlue
+window.title.unfocus:           Flat Solid
+window.title.unfocus.color:     LightGrey
+
+window.label.focus:             ParentRelative
+#window.label.focus.textColor:   White
+window.label.focus.textColor:   Aquamarine
+window.label.unfocus:           ParentRelative
+window.label.unfocus.textColor: Grey75
+
+window.button.focus:            ParentRelative
+window.button.focus.picColor:   White
+window.button.unfocus:          ParentRelative
+window.button.unfocus.picColor: Grey
+window.button.pressed:          ParentRelative
+
+window.handle.focus:            Flat Solid
+window.handle.focus.color:      DarkViolet
+window.handle.unfocus:          Flat Solid
+window.handle.unfocus.color:    MediumBlue
+
+window.grip.focus:              Flat Solid
+window.grip.unfocus:            Flat Solid
+window.grip*color:              Grey
+
+window.frame.focusColor:        DarkViolet
+window.frame.unfocusColor:      MediumBlue
+
+window.justify:                 center
+
+menu.title:                     Flat Solid
+menu.frame:                     Flat Solid
+menu.hilite:                    Flat Solid
+
+menu.title.color:               DarkViolet
+menu.title.textColor:           White
+menu.title.justify:             center
+
+menu.frame.color:               MidnightBlue
+menu.frame.textColor:           White
+menu.frame.justify:             left
+
+menu.hilite.color:              White
+menu.hilite.textColor:          Black
+
+menu.bullet:                    Triangle
+menu.bullet.position:           Right
+
+menu*font:			-adobe-timeshax-bold-r-*-*-36-*-*-*-*-*-iso10646-1
+
+
+borderColor:                    DeepPink
+
+bevelWidth:                     1
+borderWidth:                    1
+borderColor:			black
+#frameWidth:                     1
+handleWidth:                    2
+
+!*Font:				-adobe-times-bold-r-*-*-14-*-*-*-*-*-iso8859-1
+*Font:				-adobe-timeshax-bold-r-*-*-14-*-*-*-*-*-iso10646-1
+
+background: fullscreen
+background.pixmap: ~/Pictures/Wallpapers/green-blue-mountains.png
+

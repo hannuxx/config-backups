@@ -1,0 +1,12 @@
+[app] (Navigator)
+  [Workspace] {2}
+[end]
+[app] (nodecoxterm)
+  [Deco] {none}
+  [Sticky] {yes}
+  [Hidden] {yes}
+[end]
+
+[app] (stickymplayer)
+  [Sticky] {yes}
+[end]

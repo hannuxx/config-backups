@@ -1,0 +1,34 @@
+# The following variable defines the session which is started if the user doesn't explicitly select a session
+# Source: http://svn.berlios.de/svnroot/repos/slim/trunk/xinitrc.sample
+
+DEFAULT_SESSION=gnome-session
+
+case $1 in
+gnome)
+	exec gnome-session
+	;;
+xfce4)
+	exec startxfce4
+	;;
+icewm)
+	icewmbg &
+	icewmtray &
+	exec icewm
+	;;
+twm)
+	exec twm
+	;;
+dwm)
+	exec dwm
+	;;
+fluxbox)
+	exec fluxbox
+	;;
+openbox)
+	exec openbox
+	;;
+*)
+	exec $DEFAULT_SESSION
+	;;
+esac
+

@@ -1,0 +1,5 @@
+xrdb .Xresources-WHITE
+hsetroot -fill Pictures/Wallpapers/scene.png
+dwm-date
+exec dwm
+

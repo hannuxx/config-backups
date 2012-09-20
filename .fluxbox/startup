@@ -1,0 +1,59 @@
+#!/bin/sh
+#
+# fluxbox startup-script: (run by startfluxbox or .Xclients-default).
+#
+# Dumping original content. see /usr/bin/startfluxbox for that.
+#
+
+# buggy gdm workaround (in Fedora 9)
+cd $HOME
+
+res=`xdpyinfo | awk '/dimensions:/ { print $2 }'`
+
+# Hannu 2012-Sep
+hsetroot -fill ~/Pictures/Wallpaper/green-blue-mountains.png
+xcompmgr -c &
+xkbcomp $HOME/mackeys.xkb :0
+echo "Fluxbox startup script..." > ~/flux.log
+
+#xset fp+ $HOME/dotdir/Fonts/pcf
+xset r rate 400 35
+xset -b
+xset m 3 4
+
+#test -f $HOME/vc/muu/haxfonts/fonts.dir && xset fp+ $HOME/vc/muu/haxfonts
+
+# ubuntu does not load .Xmodmap by default :(
+#case `xmodmap | awk'/^lock/{print $2}'` in
+
+#case `xmodmap | sed -n 's/^lock *//p'` in
+#     '') ;;
+#     *) xmodmap ~/.Xmodmap ;;
+#esac
+
+if test -x /usr/libexec/openssh/x11-ssh-askpass
+then
+    SSH_ASKPASS=/usr/libexec/openssh/x11-ssh-askpass keychain $HOME/.ssh/id_rsa
+else
+     keychain $HOME/.ssh/id_rsa
+fi
+
+xterm &
+
+rcfopt=''
+
+if test -f local/fluxbox.shrc
+then . local/fluxbox.shrc
+fi
+
+#exec /usr/local/bin/enlightenment_start; exit 0
+
+#test -x /usr/lib/gnome-settings-daemon/gnome-settings-daemon \
+#	&& /usr/lib/gnome-settings-daemon/gnome-settings-daemon &
+
+test -x /usr/bin/nm-applet && /usr/bin/nm-applet &
+
+test -x /usr/bin/thunar && /usr/bin/thunar --daemon &
+
+#test -x /p/bin/fluxbox && fluxbox=/p/bin/fluxbox || fluxbox=/usr/bin/fluxbox
+exec fluxbox $rcfopt -log local/fluxbox.log

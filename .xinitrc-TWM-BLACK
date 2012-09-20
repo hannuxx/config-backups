@@ -1,0 +1,6 @@
+# dwm-date
+xrdb .Xresources-BLACK
+hsetroot -fill Pictures/Wallpapers/space-earth.png
+# exec dwm
+exec twm
+
