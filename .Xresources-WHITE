@@ -1,47 +1,74 @@
-! this are Xresources to make xterm look good
-! put into ~/.Xresources
 ! after changing contents, run xrdb .Xresources
 
-!! rxvt-unicode
-URxvt.perl-ext-common:	default,matcher
-URxvt.urlLauncher:	firefox
-URxvt.matcher.button:	2
-URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+! xterm*font:     *-monospace-*-*-*-18-*
+! xterm*boldFont: *-monospace-*-*-*-18-*
+! xterm*font:		10x18
+xterm*geometry:           80x25
+xterm*faceName:         Terminus:pixelsize=16
+xterm*background:	white
+xterm*foreground:	black
+!xterm*iconPixmap:	/usr/share/pixmaps/gnome-gemvt.xbm
+!Xterm*iconMask:		/usr/share/pixmaps/gnome-gemvt-mask.xbm
+xterm*loginShell:	true
+xterm*cursorColor:	rgb:00/80/00
+xterm*borderColor:	white
+xterm*scrollColor:	black
+xterm*visualBell:	true
+xterm*saveLines:	1000
+xterm*allowSendEvents:	True
+xterm*sessionMgt:	false
+xterm*color0:		black
+xterm*bellIsUrgent: true
+xterm*borderWidth: 0
+xterm*metaSendsEscape: true
+xterm*scrollBar: off
+
+!xterm*font:              -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+!xterm*dynamicColors:      true
+!xterm*utf8:               2
+!xterm*eightBitInput:      true
+!xterm*saveLines:          512
+
+
+urxvt.perl-ext-common:	default,matcher
+urxvt.urlLauncher:	firefox
+urxvt.matcher.button:	2
+urxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
 
 !! teh transparency stuff
-!URxvt*transparent:	true
-!URxvt*shading:		10
-URxvt*fading:		40
-URxvt*fadeColor:	white
-!URxvt*tintColor:	white
-URxvt*inheritPixmap:	true
+!urxvt*transparent:	true
+!urxvt*shading:		10
+urxvt*fading:		40
+urxvt*fadeColor:	white
+!urxvt*tintColor:	white
+urxvt*inheritPixmap:	true
 
-URxvt*font: xft:Monospace:pixelsize=14
-URxvt*boldFont: xft:Monospace:bold:pixelsize=14
-!URxvt*font:		9x15
-!URxvt*geometry:		80x35
+urxvt*font: xft:Monospace:pixelsize=15
+urxvt*boldFont: xft:Monospace:bold:pixelsize=15
+!urxvt*font:		9x15
+!urxvt*geometry:		80x35
 
-URxvt*scrollBar_right:	false
-URxvt*scrollBar:	false
-URxvt*borderLess:	false
-URxvt*background:	#ffffff
-URxvt*foreground:	#000000
-URxvt*color0:		#000000
-URxvt*color1:		#A80000
-URxvt*color2:		#00A800
-URxvt*color3:		#A85400
-URxvt*color4:		#0000A8
-URxvt*color5:		#A800A8
-URxvt*color6:		#00A8A8
-URxvt*color7:		#A8A8A8
-URxvt*color8:		#545054
-URxvt*color9:		#F85450
-URxvt*color10:		#50FC50
-URxvt*color11:		#F2FC50
-URxvt*color12:		#5054F8
-URxvt*color13:		#F854F8
-URxvt*color14:		#50FCF8
-URxvt*color15:		#F8FCF8 
+urxvt*scrollBar_right:	false
+urxvt*scrollBar:	false
+urxvt*borderLess:	false
+urxvt*background:	#ffffff
+urxvt*foreground:	#000000
+urxvt*color0:		#000000
+urxvt*color1:		#A80000
+urxvt*color2:		#00A800
+urxvt*color3:		#A85400
+urxvt*color4:		#0000A8
+urxvt*color5:		#A800A8
+urxvt*color6:		#00A8A8
+urxvt*color7:		#A8A8A8
+urxvt*color8:		#545054
+urxvt*color9:		#F85450
+urxvt*color10:		#50FC50
+urxvt*color11:		#F2FC50
+urxvt*color12:		#5054F8
+urxvt*color13:		#F854F8
+urxvt*color14:		#50FCF8
+urxvt*color15:		#F8FCF8 
 
 !! rxvt 
 !rxvt*transparent:	true
@@ -50,30 +77,13 @@ rxvt*tintColor:		white
 rxvt*inheritPixmap:	true
 rxvt*background:	white
 rxvt*foreground:	black
-rxvt*font:		9x15
+rxvt*font:		9x16
 rxvt*geometry:		80x35
 rxvt*scrollBar:		false
 
-!! UXTerm
-UXTerm*background:	white
-UXTerm*foreground:	black
-UXTerm*font:		9x15
-UXTerm*geometry:	80x35
+!! Uxterm
+Uxterm*background:	white
+Uxterm*foreground:	black
+Uxterm*font:		9x16
+Uxterm*geometry:	80x35
 
-! XTerm
-XTerm*background:	white
-XTerm*foreground:	black
-XTerm*font:		9x15
-XTerm*geometry:		80x35
-XTerm*iconPixmap:	/usr/share/pixmaps/gnome-gemvt.xbm
-Xterm*iconMask:		/usr/share/pixmaps/gnome-gemvt-mask.xbm
-XTerm*loginShell:	true
-XTerm*cursorColor:	rgb:00/80/00
-XTerm*borderColor:	white
-XTerm*scrollColor:	black
-XTerm*visualBell:	true
-XTerm*saveLines:	1000
-XTerm*allowSendEvents:	True
-XTerm*sessionMgt:	false
-XTerm*color0:		black
-!...

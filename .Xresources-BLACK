@@ -1,102 +1,89 @@
-! this are Xresources to make xterm look good
-! put into ~/.Xresources
 ! after changing contents, run xrdb .Xresources
 
-rxvt*transparent:          true
-rxvt*shading:              40
-!rxvt*tintColor: white
-!rxvt*inheritPixmap:	true
-rxvt*background:       black
-rxvt*foreground:       cyan
-rxvt*font:             9x15
-rxvt*geometry:         80x35
-rxvt*scrollBar: false
+! xterm*font:     *-monospace-*-*-*-18-*
+! xterm*boldFont: *-monospace-*-*-*-18-*
+! xterm*font:		10x18
+xterm*geometry:           80x25
+xterm*faceName:         Terminus:pixelsize=16
+xterm*background:	black
+xterm*foreground:	cyan
+!xterm*iconPixmap:	/usr/share/pixmaps/gnome-gemvt.xbm
+!Xterm*iconMask:		/usr/share/pixmaps/gnome-gemvt-mask.xbm
+xterm*loginShell:	true
+xterm*cursorColor:	rgb:00/80/00
+xterm*borderColor:	white
+xterm*scrollColor:	black
+xterm*visualBell:	true
+xterm*saveLines:	1000
+xterm*allowSendEvents:	True
+xterm*sessionMgt:	false
+xterm*color0:		black
+xterm*bellIsUrgent: true
+xterm*borderWidth: 0
+xterm*metaSendsEscape: true
+xterm*scrollBar: off
 
-URxvt*termName: rxvt
-!! borderless and no scrollbar
-URxvt*scrollBar_right: false
-URxvt*scrollBar: false
-URxvt*borderLess: false
+!xterm*font:              -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+!xterm*dynamicColors:      true
+!xterm*utf8:               2
+!xterm*eightBitInput:      true
+!xterm*saveLines:          512
+
+
+urxvt.perl-ext-common:	default,matcher
+urxvt.urlLauncher:	firefox
+urxvt.matcher.button:	2
+urxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+
 !! teh transparency stuff
-URxvt*inheritPixmap: true
-!URxvt*tintColor: white
-URxvt*shading: 40
-URxvt*background:       black
-URxvt*foreground:       cyan
-URxvt*font:             9x15
-URxvt*geometry:         80x35
+!urxvt*transparent:	true
+!urxvt*shading:		10
+urxvt*fading:		40
+urxvt*fadeColor:	white
+!urxvt*tintColor:	white
+urxvt*inheritPixmap:	true
 
-UXTerm*background:       black
-UXTerm*foreground:       cyan
-UXTerm*font:             9x15
-UXTerm*geometry:         80x35
+urxvt*font: xft:Monospace:pixelsize=15
+urxvt*boldFont: xft:Monospace:bold:pixelsize=15
+!urxvt*font:		9x15
+!urxvt*geometry:		80x35
 
-!miwester config
-XTerm*background:       black
-XTerm*foreground:       cyan
-!XTerm*foreground:       gray
-XTerm*font:             9x15
-XTerm*geometry:         80x35
+urxvt*scrollBar_right:	false
+urxvt*scrollBar:	false
+urxvt*borderLess:	false
+urxvt*background:	#ffffff
+urxvt*foreground:	#000000
+urxvt*color0:		#000000
+urxvt*color1:		#A80000
+urxvt*color2:		#00A800
+urxvt*color3:		#A85400
+urxvt*color4:		#0000A8
+urxvt*color5:		#A800A8
+urxvt*color6:		#00A8A8
+urxvt*color7:		#A8A8A8
+urxvt*color8:		#545054
+urxvt*color9:		#F85450
+urxvt*color10:		#50FC50
+urxvt*color11:		#F2FC50
+urxvt*color12:		#5054F8
+urxvt*color13:		#F854F8
+urxvt*color14:		#50FCF8
+urxvt*color15:		#F8FCF8 
 
-!xterm*background:	Black
-!xterm*foreground:	Cyan
-!xterm*font:             -*-courier-medium-r-normal-*-16-200-*-*-*-*-*-*
-!xterm*font:             -*-courier-medium-r-normal-*-16-200-*-*-*-*-*-*
-!xterm*font:		-misc-dejavu sans mono-medium-r-normal-*-*-120-*-*-m-*-iso8859-1
-!rterm*font:		-misc-dejavu sans mono-medium-r-normal--18-200-75-75-C-100-iso8859-1
-!rterm*font:		-Misc-Fixed-Medium-R-Normal--20-200-75-75-C-100-ISO10646-1
-!xterm*font:		-misc-fixed-medium-r-normal--18-*-*-*-*-*-iso10646-1
-!xterm*font:		-misc-monospace-medium-r-normal--18-*-*-*-*-*-iso10646-1
-!xterm*font:		-*-terminus-bold-r-normal-*-14-*-*-*-*-*-*-*
-!xterm*iconPixmap: ...
-xterm*iconPixmap:       /usr/share/pixmaps/gnome-gemvt.xbm
-xterm*iconMask:         /usr/share/pixmaps/gnome-gemvt-mask.xbm
-!XTerm*iconName: terminal
-!Mwm*xterm*iconImage: /home/a/a1111aa/xterm.icon
-XTerm*loginShell: true
-XTerm*cursorColor: rgb:00/80/00
-XTerm*borderColor: white
-XTerm*scrollColor: black
-XTerm*visualBell: true
-XTerm*saveLines: 1000
-!! XTerm.VT100.allowSendEvents: True
-XTerm*allowSendEvents: True
-XTerm*sessionMgt: false
-!XTerm*eightBitInput:  false
-!XTerm*metaSendsEscape: true
-!XTerm*internalBorder:  10
-!XTerm*highlightSelection:  true
-!XTerm*VT100*colorBDMode:  on
-!XTerm*VT100*colorBD:  blue
-!XTerm.VT100.eightBitOutput:  true
-!XTerm.VT100.titeInhibit:  false
-XTerm*color0: black
-XTerm*color1: red3
-XTerm*color2: green3
-XTerm*color3: yellow3
-XTerm*color4: DodgerBlue1
-XTerm*color5: magenta3
-XTerm*color6: cyan3
-XTerm*color7: gray90
-XTerm*color8: gray50
-XTerm*color9: red
-XTerm*color10: green
-XTerm*color11: yellow
-XTerm*color12: blue
-XTerm*color13: magenta
-XTerm*color14: cyan
-XTerm*color15: white
-XTerm*colorUL: yellow
-XTerm*colorBD: white
-!XTerm*mainMenu*backgroundPixmap:     gradient:vertical?dimension=400&start=gray10&end=gray40
-!XTerm*mainMenu*foreground:          white 
-!XTerm*vtMenu*backgroundPixmap:       gradient:vertical?dimension=550&start=gray10&end=gray40
-!XTerm*vtMenu*foreground:             white
-!XTerm*fontMenu*backgroundPixmap:     gradient:vertical?dimension=300&start=gray10&end=gray40
-!XTerm*fontMenu*foreground:           white
-!XTerm*tekMenu*backgroundPixmap:      gradient:vertical?dimension=300&start=gray10&end=gray40
-!XTerm*tekMenu*foreground:            white
-!XTerm Profiles (idea from dag wieers)
-XTerm*rightScrollBar: true
+!! rxvt 
+!rxvt*transparent:	true
+rxvt*shading:		40
+rxvt*tintColor:		white
+rxvt*inheritPixmap:	true
+rxvt*background:	black
+rxvt*foreground:	cyan
+rxvt*font:		9x16
+rxvt*geometry:		80x35
+rxvt*scrollBar:		false
 
+!! Uxterm
+Uxterm*background:	black
+Uxterm*foreground:	cyan
+Uxterm*font:		9x16
+Uxterm*geometry:	80x35
 
