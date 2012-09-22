@@ -2,7 +2,7 @@
 # A Fluxbox theme by: Hannu The Hacker
 # 2012
 toolbar:                        Flat Solid
-toolbar.color:                  MidnightBlue
+toolbar.color:                  Red
 
 toolbar.clock:                  ParentRelative
 toolbar.label:                  ParentRelative
@@ -19,15 +19,14 @@ toolbar.justify:                center
 toolbar*font:			-adobe-timeshax-bold-r-*-*-18-*-*-*-*-*-iso10646-1
 
 window.title.focus:             Flat Solid
-window.title.focus.color:       LightBlue
+window.title.focus.color:       SteelBlue
 window.title.unfocus:           Flat Solid
 window.title.unfocus.color:     LightGrey
 
 window.label.focus:             ParentRelative
-#window.label.focus.textColor:   White
 window.label.focus.textColor:   Aquamarine
 window.label.unfocus:           ParentRelative
-window.label.unfocus.textColor: Grey75
+window.label.unfocus.textColor: DarkGrey
 
 window.button.focus:            ParentRelative
 window.button.focus.picColor:   White
@@ -36,15 +35,16 @@ window.button.unfocus.picColor: Grey
 window.button.pressed:          ParentRelative
 
 window.handle.focus:            Flat Solid
-window.handle.focus.color:      DarkViolet
+window.handle.focus.color:      LightBlue
 window.handle.unfocus:          Flat Solid
-window.handle.unfocus.color:    MediumBlue
+window.handle.unfocus.color:    LightGrey
+handleWidth:                    3
 
 window.grip.focus:              Flat Solid
 window.grip.unfocus:            Flat Solid
-window.grip*color:              Grey
+window.grip*color:              White
 
-window.frame.focusColor:        DarkViolet
+window.frame.focusColor:        Red
 window.frame.unfocusColor:      MediumBlue
 
 window.justify:                 center
@@ -53,7 +53,7 @@ menu.title:                     Flat Solid
 menu.frame:                     Flat Solid
 menu.hilite:                    Flat Solid
 
-menu.title.color:               DarkViolet
+menu.title.color:               Blue
 menu.title.textColor:           White
 menu.title.justify:             center
 
@@ -69,14 +69,12 @@ menu.bullet.position:           Right
 
 menu*font:			-adobe-timeshax-bold-r-*-*-36-*-*-*-*-*-iso10646-1
 
-
-borderColor:                    DeepPink
+borderColor:                    Red
 
 bevelWidth:                     1
 borderWidth:                    1
 borderColor:			black
 #frameWidth:                     1
-handleWidth:                    2
 
 !*Font:				-adobe-times-bold-r-*-*-14-*-*-*-*-*-iso8859-1
 *Font:				-adobe-timeshax-bold-r-*-*-14-*-*-*-*-*-iso10646-1

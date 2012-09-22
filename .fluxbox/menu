@@ -26,15 +26,15 @@
   [exec] (Conky) {conky} 
   [exec] (htop) {urxvt -e htop} 
 [separator] 
+  [exec] (rhythmbox) {rhythmbox} 
+  [exec] (audacity) {audacity} 
+  [exec] (gimp) {gimp} 
+  [exec] (blender) {blender -w} 
+[separator] 
   [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg} 
   [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png} 
   [exec] (nautilus) {nautilus --no-desktop --browser} 
   [exec] (Run) {fbrun} 
-[separator] 
-  [exec] (gimp) {gimp} 
-  [exec] (blender) {blender -w} 
-  [exec] (audacity) {audacity} 
-  [exec] (rhythmbox) {rhythmbox} 
 [separator] 
 [submenu] (Fluxbox menu)
       [config] (Configure) 
