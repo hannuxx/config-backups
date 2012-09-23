@@ -32,6 +32,7 @@
   [exec] (blender) {blender -w} 
 [separator] 
   [exec] (Thunar) {thunar} 
+  [exec] (Nvidia Settings) {nvidia-settings}
   [exec] (Run) {fbrun} 
   [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg} 
   [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png} 
