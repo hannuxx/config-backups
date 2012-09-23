@@ -6,9 +6,9 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 
 case $1 in
-gnome)
-	exec gnome-session
-	;;
+#gnome)
+#	exec gnome-session
+#	;;
 
 fluxbox)
 	xrdb /home/hannu/.Xresources-WHITE
