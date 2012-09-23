@@ -16,25 +16,25 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox)
 [encoding] {UTF-8}
+  [exec] (Firefox Nightly) {firefox-nightly} 
   [exec] (xterm) {xterm} 
-  [exec] (firefox-nightly) {firefox-nightly} 
-  [exec] (mutt) {urxvt -e mutt} 
-  [exec] (irssi) {urxvt -e irssi} 
-  [exec] (vim) {urxvt -e vim} 
+  [exec] (mutt) {xterm -e mutt} 
+  [exec] (irssi) {xterm -e irssi} 
   [exec] (emacs) {emacs} </usr/share/emacs/24.2/etc/images/icons/hicolor/32x32/apps/emacs.png>
   [exec] (xclock) {xclock} 
   [exec] (Conky) {conky} 
-  [exec] (htop) {urxvt -e htop} 
+  [exec] (htop) {xterm -e htop} 
 [separator] 
+  [exec] (PulseAudio Ctrl) {pavucontrol} 
   [exec] (rhythmbox) {rhythmbox} 
   [exec] (audacity) {audacity} 
   [exec] (gimp) {gimp} 
   [exec] (blender) {blender -w} 
 [separator] 
+  [exec] (Thunar) {thunar} 
+  [exec] (Run) {fbrun} 
   [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg} 
   [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png} 
-  [exec] (nautilus) {nautilus --no-desktop --browser} 
-  [exec] (Run) {fbrun} 
 [separator] 
 [submenu] (Fluxbox menu)
       [config] (Configure) 
