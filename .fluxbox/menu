@@ -16,8 +16,8 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox)
 [encoding] {UTF-8}
-  [exec] (Firefox Nightly) {firefox-nightly} 
   [exec] (xterm) {xterm} 
+  [exec] (Firefox Nightly) {firefox-nightly} 
   [exec] (mutt) {xterm -e mutt} 
   [exec] (irssi) {xterm -e irssi} 
   [exec] (emacs) {emacs} </usr/share/emacs/24.2/etc/images/icons/hicolor/32x32/apps/emacs.png>
