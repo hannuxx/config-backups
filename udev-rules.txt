@@ -1,0 +1,22 @@
+# /etc/udev/rules.d/51-hannu-usb.rules:
+
+# Hannu: rules for ttyUSB based USB-UART
+# Hannu: relax the permissions just for ttyUSB0 and ttyUSB1
+KERNEL=="ttyUSB0", MODE="0666"
+KERNEL=="ttyUSB1", MODE="0666"
+# Hannu: prevent modem-manager from touching USB-UART device that is a target board
+# Both MicroZed and BeagleBone boards
+SUBSYSTEM=="usb", ATTR{idVendor}=="04b4", ATTR{idProduct}=="0008", MODE="0666", GROUP="dialout", ENV{ID_MM_DEVICE_IGNORE}="1"
+SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", MODE="0666", GROUP="dialout", ENV{ID_MM_DEVICE_IGNORE}="1"
+
+sudo cp /lib/udev/rules.d/50-udev-default.rules /etc/udev/rules.d/
+sudo vi /etc/udev/rules.d/50-udev-default.rules
+sudo vi /etc/udev/rules.d/50-udev-default.rules
+sudo cp /lib/udev/rules.d/50-udev-default.rules work/
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+# reconnect MicroZed cabling (ttyUSB0 or ttyUSB1)
+sudo usermod -a -G dialout hannu
+minicom -D /dev/ttyUSB0
+
+
