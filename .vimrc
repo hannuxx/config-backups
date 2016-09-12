@@ -1,4 +1,7 @@
-set noswapfile
+
+" set noswapfile
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
 
 filetype indent plugin on
 
